@@ -52,7 +52,7 @@ function Bullet() {
 
 export default function Home() {
   return (
-    <section className="px-8 md:px-12 pt-8 pb-24">
+    <section className="px-6 md:pl-6 md:pr-12 pt-8 pb-24">
       <div className="relative grid grid-cols-12 gap-8 items-start">
         {/* column dividers */}
         <div aria-hidden className="hidden md:block pointer-events-none absolute inset-y-0 left-1/3 w-px bg-rule" />
@@ -60,7 +60,7 @@ export default function Home() {
 
         {/* LEFT — sticky */}
         <aside className="col-span-12 md:col-span-4 md:sticky md:top-[calc(var(--nav-h)+2rem)] md:self-start flex flex-col gap-6">
-          <h1 className="text-2xl md:text-8xl font-light tracking-tightest leading-[0.95]">
+          <h1 className="text-2xl md:text-7xl font-light tracking-tightest leading-[0.95]">
             hi!<br />i&apos;m AYO!.
           </h1>
 
@@ -89,7 +89,7 @@ export default function Home() {
             </a>
           </div>
 
-          <ul className="text-sm text-ink/70">
+          <ul className="text-sm text-ink/70 mt-8">
             {skills.map((s) => (
               <li key={s} className="border-t border-rule py-1.5">{s}</li>
             ))}
