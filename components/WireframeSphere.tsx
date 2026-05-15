@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { IcosahedronGeometry } from "three";
 import * as THREE from "three";
 
 function Mesh() {
