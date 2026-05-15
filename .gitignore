@@ -41,3 +41,5 @@ yarn-error.log*
 # inspection screenshots (source site + local renders)
 site-*.png
 my-site-*.png
+home-*.png
+verify-*.png
