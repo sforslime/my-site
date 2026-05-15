@@ -37,9 +37,7 @@ const skills = ["Student", "software developer", "future quant", "skill four"];
 
 const rotatingWords = [
   "i'm a 18 y/o.",
-  "i'm a student.",
-  "i'm a programmer.",
-  "i'm a future quant.",
+  "i'm a 18 y/o.",
 ];
 
 function Bullet() {
