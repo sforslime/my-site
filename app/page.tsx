@@ -35,7 +35,12 @@ const roles = [
 
 const skills = ["Student", "software developer", "future quant", "skill four"];
 
-const rotatingWords = ["i'm a 18 y/o..."];
+const rotatingWords = [
+  "i'm a 18 y/o.",
+  "i'm a student.",
+  "i'm a programmer.",
+  "i'm a future quant.",
+];
 
 function Bullet() {
   return (
@@ -135,7 +140,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <p className="text-[16px] font-light text-ink/70">i&apos;m a</p>
+          <p className="text-[16px] font-light text-ink/70"><Typewriter words={rotatingWords} /></p>
           <div className="flex flex-col gap-4">
             <RoleList />
           </div>
