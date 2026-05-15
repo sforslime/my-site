@@ -5,8 +5,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
-        serif: ["var(--font-serif)", "ui-serif", "Georgia", "serif"],
+        sans: ["NHGrotesk", "ui-sans-serif", "system-ui", "sans-serif"],
+        serif: ["Canela", "Georgia", "serif"],
       },
       letterSpacing: {
         tightest: "-0.04em",

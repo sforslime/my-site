@@ -6,7 +6,7 @@ export default function SiteFooter() {
       <div className="px-8 md:px-12 pt-16 pb-12 grid grid-cols-1 md:grid-cols-12 gap-10">
         <div className="md:col-span-6 space-y-6">
           <p className="text-sm uppercase tracking-wide opacity-90">
-            A short tagline goes here
+            A SWISS ARMY KNIFE IN CODING + FINANCE
           </p>
           <a
             href="mailto:hello@yourdomain.com"
@@ -19,10 +19,10 @@ export default function SiteFooter() {
         <div className="md:col-span-3">
           <p className="text-xs uppercase opacity-50 mb-4">Social</p>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:opacity-60">LinkedIn</a></li>
-            <li><a href="#" className="hover:opacity-60">Instagram</a></li>
-            <li><a href="#" className="hover:opacity-60">TikTok</a></li>
-            <li><a href="#" className="hover:opacity-60">X</a></li>
+            <li><a href="https://linkedin.com/in/ayodele-opadiran" className="hover:opacity-60">LinkedIn</a></li>
+            <li><a href="https://instagram.com/yourstruly.ayo" className="hover:opacity-60">Instagram</a></li>
+            <li><a href="https://x.com/sforslime" className="hover:opacity-60">X</a></li>
+            <li><a href="https://substack.com/@sforslime" className="hover:opacity-60">Substack</a></li>
           </ul>
         </div>
 
@@ -39,17 +39,17 @@ export default function SiteFooter() {
       <div className="overflow-hidden border-y border-paper/10">
         <div className="marquee flex whitespace-nowrap">
           <span className="text-[18vw] leading-none font-semibold tracking-tightest pr-12">
-            YOUR NAME · YOUR NAME ·
+            AYODELE OPADIRAN · AYO! ·
           </span>
           <span className="text-[18vw] leading-none font-semibold tracking-tightest pr-12" aria-hidden>
-            YOUR NAME · YOUR NAME ·
+            AYODELE OPADIRAN · AYO! ·
           </span>
         </div>
       </div>
 
       <div className="px-8 md:px-12 py-6 flex items-center justify-between text-xs opacity-70">
-        <span>© {new Date().getFullYear()} Your Name.</span>
-        <span>Currently in: Your City</span>
+        <span>© {new Date().getFullYear()} AYODELE OPADIRAN.</span>
+        <span>Currently in: Lagos, Nigeria</span>
       </div>
     </footer>
   );

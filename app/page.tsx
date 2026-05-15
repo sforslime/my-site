@@ -1,42 +1,41 @@
 import Link from "next/link";
 import Typewriter from "@/components/Typewriter";
+import WireframeSphere from "@/components/WireframeSphereClient";
 
 const roles = [
   {
     n: "01",
-    title: "role one",
+    title: "programmer",
     items: [
-      "short bullet describing the role",
-      "another bullet with a metric or outcome",
-      "a third line if you need it",
+      "building LetuSell, a platform for student businesses in universities across Nigeria ",
+      "built NaijaFlights, a flight search engine for Nigerian domestic flights",
+      { label: "more here", href: "/work" },
     ],
   },
   {
     n: "02",
-    title: "role two @ ...",
+    title: "comp sci major",
     items: [
-      "what you did — short and concrete",
-      "another notable bullet",
+      "1/2Y at Howard university",
+      "now @ the University of Ilorin",
     ],
   },
   {
     n: "03",
-    title: "prev. role @ ...",
-    items: ["company a", "company b", "company c"],
+    title: "hobbies...",
+    items: ["basketballlll!!!", "music🎧",],
   },
   {
     n: "04",
-    title: "education / status",
-    items: ["school, degree, year", "now @ ..."],
+    title: "status",
+    items: ["not bound by anything?", "now @ ..."],
   },
 ];
 
-const skills = ["student", "software developer", "future quant", "skill four"];
+const skills = ["Student", "software developer", "future quant", "skill four"];
 
 const rotatingWords = [
-  "18",
-  "18 y/o",
-  "18 year old",
+  "i'm a 18 y/o...",
 ];
 
 function Bullet() {
@@ -53,14 +52,14 @@ function Bullet() {
 export default function Home() {
   return (
     <section className="px-6 md:pl-6 md:pr-12 pt-8 pb-24">
-      <div className="relative grid grid-cols-12 gap-8 items-start">
+      <div className="relative grid grid-cols-10 gap-8 items-start">
         {/* column dividers */}
-        <div aria-hidden className="hidden md:block pointer-events-none absolute inset-y-0 left-1/3 w-px bg-rule" />
-        <div aria-hidden className="hidden md:block pointer-events-none absolute inset-y-0 left-3/4 w-px bg-rule" />
+        <div aria-hidden className="hidden md:block pointer-events-none absolute inset-y-0 left-[30%] w-px bg-rule" />
+        <div aria-hidden className="hidden md:block pointer-events-none absolute inset-y-0 left-[80%] w-px bg-rule" />
 
         {/* LEFT — sticky */}
-        <aside className="col-span-12 md:col-span-4 md:sticky md:top-[calc(var(--nav-h)+2rem)] md:self-start flex flex-col gap-6">
-          <h1 className="text-2xl md:text-7xl font-light tracking-tightest leading-[0.95]">
+        <aside className="col-span-10 md:col-span-3 md:sticky md:top-[calc(var(--nav-h)+2rem)] md:self-start flex flex-col gap-6 md:h-[calc(100vh-var(--nav-h)-3rem)]">
+          <h1 className="text-[clamp(2.5rem,8vw,90px)] font-light tracking-[-0.2px] leading-[1.1]">
             hi!<br />i&apos;m AYO!.
           </h1>
 
@@ -89,31 +88,35 @@ export default function Home() {
             </a>
           </div>
 
-          <ul className="text-sm text-ink/70 mt-8">
+          <ul className="text-[16px] font-light text-ink/70 mt-auto mb-12 border-b border-rule">
             {skills.map((s) => (
-              <li key={s} className="border-t border-rule py-1.5">{s}</li>
+              <li key={s} className="border-t border-rule py-0.3">{s}</li>
             ))}
           </ul>
         </aside>
 
         {/* MIDDLE — scrolls */}
-        <div className="col-span-12 md:col-span-5 flex flex-col gap-10">
-          <p className="text-sm text-ink/70">
-            i&apos;m a <Typewriter words={rotatingWords} />
+        <div className="col-span-10 md:col-span-5 flex flex-col gap-10">
+          <p className="text-[16px] font-light text-ink/70">
+            <Typewriter words={rotatingWords} />
           </p>
 
           <div className="grid grid-flow-col grid-rows-2 grid-cols-2 gap-x-8 gap-y-10">
             {roles.map((r) => (
               <div key={r.n}>
-                <h2 className="text-[15px] font-medium leading-snug mb-3">
-                  <span className="text-ink/60 mr-2">[{r.n}]</span>
+                <h2 className="text-[18px] font-medium leading-[1.2] tracking-normal mb-2">
+                  <span className="mr-1.5">[{r.n}]</span>
                   {r.title}
                 </h2>
-                <ul className="space-y-1.5 text-[14px] font-light text-ink/85 leading-snug">
+                <ul className="space-y-1 text-[16px] font-light text-ink/80 leading-[1.2] tracking-[-0.02em]">
                   {r.items.map((it, i) => (
                     <li key={i} className="flex">
                       <Bullet />
-                      <span>{it}</span>
+                      {typeof it === "string" ? (
+                        <span>{it}</span>
+                      ) : (
+                        <Link href={it.href} className="underline underline-offset-2 hover:opacity-60 transition">{it.label}</Link>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -121,33 +124,31 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-4 aspect-[4/3] w-full bg-neutral-100 rounded-sm flex items-center justify-center text-ink/30 text-sm">
-            [your photo here]
-          </div>
+          <WireframeSphere className="w-full aspect-square" />
 
           {/* extra scroll space so sticky effect is visible — replace with real content */}
           <div className="h-[60vh]" aria-hidden />
         </div>
 
         {/* RIGHT — sticky */}
-        <aside className="col-span-12 md:col-span-3 md:sticky md:top-[calc(var(--nav-h)+2rem)] md:self-start flex flex-col items-start md:items-end gap-6">
-          <div className="flex items-center gap-2 text-sm">
+        <aside className="col-span-10 md:col-span-2 md:sticky md:top-[calc(var(--nav-h)+2rem)] md:self-start flex flex-col items-start md:items-end gap-6 md:h-[calc(100vh-var(--nav-h)-3rem)]">
+          <div className="flex items-center gap-2 text-[16px] font-medium">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
             <span>available :)</span>
           </div>
           <Link
             href="/work"
-            className="inline-flex items-center gap-2 bg-ink text-paper rounded-full px-6 py-3 text-sm hover:opacity-90 transition"
+            className="inline-flex items-center gap-2 bg-ink text-paper rounded-full px-6 py-3 text-[16px] font-medium hover:opacity-90 transition"
           >
             view work <span aria-hidden>→</span>
           </Link>
-          <p className="text-sm text-ink/70">☆ based in [city]</p>
+          <p className="text-[16px] font-light text-ink/70">☆ based in Lagos</p>
 
           <a
             href="mailto:hello@yourdomain.com"
-            className="mt-auto text-sm text-ink/70 hover:opacity-60 pt-12"
+            className="mt-auto text-[16px] font-light text-ink/70 hover:opacity-60"
           >
-            hello@yourdomain.com
+            contact me @ ....
           </a>
         </aside>
       </div>
