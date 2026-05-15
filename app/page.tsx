@@ -120,8 +120,8 @@ export default function Home() {
 
       {/* ── MOBILE (hidden on md+) ───────────────────────── */}
       <div className="md:hidden px-6 flex flex-col gap-6">
-        <h1 className="text-[64px] font-light tracking-[-0.2px] leading-[1.0]">
-          hi!<br />i&apos;m AYO!.
+        <h1 className="text-[clamp(2.5rem,11.5vw,64px)] font-medium tracking-[-0.2px] leading-[1.0] whitespace-nowrap">
+          hi! i&apos;m AYO!.
         </h1>
 
         <div className="flex items-center justify-between">
@@ -134,9 +134,9 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-3">
           <p className="text-[16px] font-light text-ink/70">i&apos;m a</p>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
             <RoleList />
           </div>
         </div>
