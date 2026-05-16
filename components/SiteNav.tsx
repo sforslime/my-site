@@ -92,7 +92,7 @@ export default function SiteNav() {
             <div>
               <p className="uppercase tracking-widest text-[11px] text-ink/40 mb-1">Email</p>
               <a href="mailto:hello@yourdomain.com" className="font-light hover:opacity-60 transition uppercase">
-                hello@yourdomain.com
+                ...
               </a>
             </div>
             <div>

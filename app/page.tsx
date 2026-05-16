@@ -33,7 +33,7 @@ const roles = [
   },
 ];
 
-const skills = ["Student", "software developer", "future quant", "skill four"];
+const skills = ["AI Engineering | ML Ops ", "Software dev", "Aspiring quant", "I can build just about anything ngl"];
 
 const rotatingWords = [
   "i'm a 18 y/o.",
@@ -150,8 +150,7 @@ export default function Home() {
         </div>
 
         <ScrollFadeText className="text-[16px] font-light leading-[1.5] text-ink mt-8">
-          [your bio text here — a couple of sentences about what drives you,
-          how you think, what you&apos;re building toward. something real.]
+          i can build just about anything ngl! personal ai assistant? personal website? need me to refactor code? build a web scraper?this site is a work in progress, so expect to see new content and features added over time! i built it to share my projects, thoughts, and whatever else i find interesting. if you want to chat or collaborate, feel free to reach out on instagram! 🧙🏽‍♂️
         </ScrollFadeText>
 
         <WireframeSphere className="w-full aspect-square mt-4" />

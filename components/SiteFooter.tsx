@@ -12,7 +12,7 @@ export default function SiteFooter() {
             href="mailto:hello@yourdomain.com"
             className="block text-sm uppercase tracking-wide border-b border-paper/60 pb-1 w-fit"
           >
-            hello@yourdomain.com
+            ...
           </a>
         </div>
 
