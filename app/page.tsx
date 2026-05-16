@@ -124,7 +124,7 @@ export default function Home() {
       {/* ── MOBILE (hidden on md+) ───────────────────────── */}
       <div className="md:hidden px-6 flex flex-col gap-6">
         <h1 className="text-[clamp(2.5rem,11.5vw,64px)] font-medium tracking-[-0.2px] leading-[1.0] whitespace-nowrap">
-          hi! i&apos;m AYO!.
+          hi! i&apos;m AYO!
         </h1>
 
         <div className="flex items-center justify-between">
