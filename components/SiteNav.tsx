@@ -27,9 +27,9 @@ export default function SiteNav() {
 
         <div className="flex items-center gap-8">
           <nav className="hidden md:flex items-center gap-8 text-[16px] font-medium">
-            <Link href="/about" className="hover:opacity-60 transition">About</Link>
-            <Link href="/work" className="hover:opacity-60 transition">Work</Link>
-            <Link href="/resume.pdf" className="hover:opacity-60 transition">Resume</Link>
+            <Link href="/about" className="hover:opacity-60 transition">ABOUT</Link>
+            <Link href="/work" className="hover:opacity-60 transition">WORK</Link>
+            <Link href="/resume.pdf" className="hover:opacity-60 transition">RESUME</Link>
           </nav>
 
           <button
