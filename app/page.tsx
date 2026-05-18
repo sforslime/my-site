@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Typewriter from "@/components/Typewriter";
 import WireframeSphere from "@/components/WireframeSphereClient";
+import StarDoodle from "@/components/StarDoodleClient";
 import ScrollFadeText from "@/components/ScrollFadeText";
 
 const roles = [
@@ -153,7 +154,7 @@ export default function Home() {
           i can build just about anything ngl! personal ai assistant? personal website? need me to refactor code? build a web scraper?this site is a work in progress, so expect to see new content and features added over time! i built it to share my projects, thoughts, and whatever else i find interesting. if you want to chat or collaborate, feel free to reach out on instagram! 🧙🏽‍♂️
         </ScrollFadeText>
 
-        <WireframeSphere className="w-full aspect-square mt-4" />
+        <StarDoodle className="-mx-6 w-screen aspect-square mt-4" />
       </div>
 
       {/* ── DESKTOP (hidden on mobile) ───────────────────── */}
