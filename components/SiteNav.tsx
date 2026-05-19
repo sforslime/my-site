@@ -98,10 +98,10 @@ export default function SiteNav() {
             <div>
               <p className="uppercase tracking-widest text-[11px] text-ink/40 mb-1">Social</p>
               <div className="flex gap-5 font-light uppercase">
-                <a href="#" className="hover:opacity-60 transition">Instagram</a>
-                <a href="#" className="hover:opacity-60 transition">X</a>
-                <a href="#" className="hover:opacity-60 transition">LinkedIn</a>
-                <a href="#" className="hover:opacity-60 transition">Substack</a>
+                <a href="https://instagram.com/yourstruly.ayo" className="hover:opacity-60 transition">Instagram</a>
+                <a href="https://x.com/sforslime" className="hover:opacity-60 transition">X</a>
+                <a href="https://linkedin.com/in/ayodele-opadiran" className="hover:opacity-60 transition">LinkedIn</a>
+                <a href="https://substack.com/@sforslime" className="hover:opacity-60 transition">Substack</a>
               </div>
             </div>
           </div>
