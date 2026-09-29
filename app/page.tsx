@@ -18,8 +18,7 @@ const roles = [
     n: "02",
     title: "comp sci major",
     items: [
-      "1/2Y at Howard university",
-      "now @ the University of Ilorin",
+      "first year CS major at York University",
     ],
   },
   {
