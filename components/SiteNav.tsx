@@ -3,11 +3,13 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
+const RESUME_URL = "https://drive.google.com/file/d/19oDWBUL-BSxRVWS7b-0It4CV2o9mzq5q/view?usp=sharing";
+
 const navLinks = [
   { n: "01", label: "HOME", href: "/" },
   { n: "02", label: "ABOUT", href: "/about" },
   { n: "03", label: "WORK", href: "/work" },
-  { n: "04", label: "RESUME", href: "/resume.pdf" },
+  { n: "04", label: "RESUME", href: RESUME_URL },
 ];
 
 export default function SiteNav() {
@@ -29,7 +31,7 @@ export default function SiteNav() {
           <nav className="hidden md:flex items-center gap-8 text-[16px] font-medium">
             <Link href="/about" className="hover:opacity-60 transition">ABOUT</Link>
             <Link href="/work" className="hover:opacity-60 transition">WORK</Link>
-            <Link href="/resume.pdf" className="hover:opacity-60 transition">RESUME</Link>
+            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition">RESUME</a>
           </nav>
 
           <button
@@ -66,6 +68,7 @@ export default function SiteNav() {
               <Link
                 key={n}
                 href={href}
+                {...(href.startsWith("http") && { target: "_blank", rel: "noopener noreferrer" })}
                 onClick={() => setOpen(false)}
                 className="flex items-baseline gap-4 group py-1"
                 style={{
