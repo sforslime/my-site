@@ -10,7 +10,8 @@ const roles = [
     title: "programmer",
     items: [
       "building LetuSell, an AI shopping concierge for university students in Nigeria",
-      { label: "more here", href: "/work" },
+      "built a read-only API that pulls news articles across multiple newsrooms in Nigeria",
+      { label: "check out my work here", href: "/work" },
     ],
   },
   {
@@ -149,7 +150,7 @@ export default function Home() {
         </div>
 
         <ScrollFadeText className="text-[16px] font-light leading-[1.5] text-ink mt-8">
-          i can build just about anything ngl! personal ai assistant? personal website? need me to refactor code? build a web scraper?this site is a work in progress, so expect to see new content and features added over time! i built it to share my projects, thoughts, and whatever else i find interesting. if you want to chat or collaborate, feel free to reach out on instagram! 🧙🏽‍♂️
+          i can build just about anything ngl! personal ai assistant? personal website? need me to refactor code? build a web scraper? this site is a work in progress, so expect to see new content and features added over time! i built it to share my projects, thoughts, and whatever else i find interesting. if you want to chat or collaborate, feel free to reach out on instagram! 🧙🏽‍♂️
         </ScrollFadeText>
 
         <StarDoodle className="-mx-6 w-screen aspect-square mt-4" />
