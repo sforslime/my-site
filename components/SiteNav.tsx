@@ -90,12 +90,12 @@ export default function SiteNav() {
           <div className="flex flex-col gap-5 text-[13px] pb-2">
             <div>
               <p className="uppercase tracking-widest text-[11px] text-ink/40 mb-1">Location</p>
-              <p className="font-light">Lagos, Nigeria</p>
+              <p className="font-light">Toronto, Ontario</p>
             </div>
             <div>
               <p className="uppercase tracking-widest text-[11px] text-ink/40 mb-1">Email</p>
-              <a href="mailto:hello@yourdomain.com" className="font-light hover:opacity-60 transition uppercase">
-                ...
+              <a href="mailto:ayoaopa3@gmail.com" className="font-light hover:opacity-60 transition uppercase">
+                ayoaopa3@gmail.com
               </a>
             </div>
             <div>

@@ -9,8 +9,7 @@ const roles = [
     n: "01",
     title: "programmer",
     items: [
-      "building LetuSell, a platform for student businesses in universities across Nigeria ",
-      "built NaijaFlights, a flight search engine for Nigerian domestic flights",
+      "building LetuSell, an AI shopping concierge for university students in Nigeria",
       { label: "more here", href: "/work" },
     ],
   },
@@ -195,12 +194,12 @@ export default function Home() {
             >
               view work <span aria-hidden>→</span>
             </Link>
-            <p className="text-[16px] font-light text-ink/70">☆ based in Lagos</p>
+            <p className="text-[16px] font-light text-ink/70">☆ based in Toronto</p>
             <a
-              href="mailto:hello@yourdomain.com"
+              href="mailto:ayoaopa3@gmail.com"
               className="mt-auto text-[16px] font-light text-ink/70 hover:opacity-60"
             >
-              contact me @ ....
+              contact me @ ayoaopa3@gmail.com
             </a>
           </aside>
         </div>

@@ -9,10 +9,10 @@ export default function SiteFooter() {
             A SWISS ARMY KNIFE IN CODING + FINANCE
           </p>
           <a
-            href="mailto:hello@yourdomain.com"
+            href="mailto:ayoaopa3@gmail.com"
             className="block text-sm uppercase tracking-wide border-b border-paper/60 pb-1 w-fit"
           >
-            ...
+            ayoaopa3@gmail.com
           </a>
         </div>
 
@@ -49,7 +49,7 @@ export default function SiteFooter() {
 
       <div className="px-8 md:px-12 py-6 flex items-center justify-between text-xs opacity-70">
         <span>© {new Date().getFullYear()} AYODELE OPADIRAN.</span>
-        <span>Currently in: Lagos, Nigeria</span>
+        <span>Currently in: Toronto, Ontario</span>
       </div>
     </footer>
   );
