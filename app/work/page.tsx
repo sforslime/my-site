@@ -52,6 +52,7 @@ const projects: Project[] = [
     title: "Quant-Bench",
     category: "Research",
     year: "2026",
+    image: "/quant-bench.png",
     description:
       "A multilingual LLM quantization study in English, Pidgin, and Yoruba. Benchmarked 2 local LLMs across 5 quantization levels on an Apple M4 for speed, memory, and accuracy, using paired McNemar tests, Holm correction, and bootstrap confidence intervals. A pre-registered test on 573 held-out question pairs showed Yoruba lost ~40% of its reading skill at 3-bit vs. 2–14% for English, while Q4_K_M ran 45–56% faster with 31–34% less GPU memory and no significant English/Pidgin quality loss. Built with Python, NumPy, llama.cpp, and Hugging Face.",
     github: "https://github.com/sforslime/quant-bench",
@@ -65,8 +66,8 @@ export default function Work() {
         {projects.map((p) => (
           <div key={p.slug} className="group block">
             <Link
-              href={p.site ?? `/work/${p.slug}`}
-              {...(p.site && { target: "_blank", rel: "noopener noreferrer" })}
+              href={p.site ?? p.github ?? `/work/${p.slug}`}
+              {...((p.site || p.github) && { target: "_blank", rel: "noopener noreferrer" })}
               className="block"
             >
               {p.video ? (
